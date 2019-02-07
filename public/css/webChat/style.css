@@ -1,0 +1,75 @@
+#divDynamicChat {	
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width: auto;
+	height: auto;
+	border: 1px solid red;
+}
+
+#divViewMessage {
+	overflow-x: auto;
+	overflow-y: hidden;
+	height: 300px;
+	width: 200px;
+	min-height: 300px;
+	min-width: 200px;
+	max-height: 700px;
+	max-width: 450px;
+}
+
+#rsz {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+#viewMessage {
+	border: 1px solid grey;
+	height: 100%;
+	width: 100%;
+}
+
+#writeMessage {
+	border: 1px solid grey;
+	margin-top: 5px;
+	outline: none;
+	overflow: hidden;
+	resize: none;
+	width: calc(100% - 5px);
+}
+
+#addChanel {
+	width: 20px;
+	height: 20px;
+	background-color: rgba(60,60,60,0.7);
+	border: none;
+	border-radius: 50%;
+	outline: none;
+}
+
+#addChanel::before, #addChanel::after {
+	content: '';
+	position: absolute;
+	background: white;
+	transform: translate(-50%,-50%);
+	border-radius: 20%;
+}
+
+#addChanel::before {
+	width: 10px;
+	height: 2px;
+}
+
+#addChanel::after {
+	width: 2px;
+	height: 10px;
+}
+
+#chanelList {
+
+}

@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+	<link href="{{ asset('css/webChat/style.css')}}" rel="stylesheet" />
+{% endblock %}
+{% block body %}
+	<div id="divDynamicChat">
+		<div id="chanelList">
+
+		</div>
+
+		<div id="divViewMessage">
+			<div id="rsz"></div>
+			<table id="viewMessage"></table>
+		</div>
+
+		<textarea id="writeMessage"></textarea>
+
+		<button id="addChanel"></button>
+	</div>
+{% endblock %}
+{% block javascripts %}
+	<script src="{{ asset('js/webChat/dynamicChatResize.js')}}"></script>
+{% endblock %}
